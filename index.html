@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form with Captcha</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="login-form">
+    <div class="form-title">Login form</div>
+    <div class="form-input">
+      <label for="username">Username</label>
+      <input type="text" id="username">
+    </div>
+    <div class="form-input">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="captcha">
+      <label for="captcha-input">Enter Captcha</label>
+      <div class="preview"></div>
+      <div class="captcha-form">
+        <input type="text" id="captcha-form" placeholder="Enter captcha text">
+        <button class="captcha-refresh"><i class="fa fa-refresh"></i></button>
+      </div>
+    </div>
+    <div class="form-input">
+      <button id="login-btn">Login</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
